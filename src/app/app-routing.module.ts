@@ -10,9 +10,14 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
-    path: 'new-to-do',
-    loadChildren: () => import('./new-to-do/new-to-do.module').then( m => m.NewToDoPageModule)
+  },
+  {
+    path: 'scheduled',
+    loadChildren: () => import('./scheduled/scheduled.module').then( m => m.ScheduledPageModule)
+  },
+  {
+    path: 'today',
+    loadChildren: () => import('./today/today.module').then( m => m.TodayPageModule)
   },
 
 ];
