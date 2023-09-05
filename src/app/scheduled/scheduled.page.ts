@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scheduled.page.scss'],
 })
 export class ScheduledPage implements OnInit {
+  scheduled : any[] =[];
+  today:any;
+  tomorrow:any;
 
   constructor() { }
 
   ngOnInit() {
+    this.Select();
   }
+
+Select(){
+this.today = "Reminder for today";
+this.tomorrow = "Reminder for tomorrow";
+}
 
 }

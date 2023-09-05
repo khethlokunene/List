@@ -12,4 +12,9 @@ export class TodayPage implements OnInit {
   ngOnInit() {
   }
 
+  onFabClick() {
+    // Add your custom logic here
+    alert('Fab button clicked');
+  }
+
 }
